@@ -68,4 +68,9 @@ window.addEventListener("load", () => {
 
 //Esercizio 6: Crea un pulsante in HTML. Usa JavaScript per impostare un attributo 'disabled' sul pulsante usando setAttribute().
 
+window.addEventListener("load", () => {
+  const button = document.querySelector("button");
+  button.setAttribute("disabled", "");
+  console.log(button);
+});
 //Esercizio 7: Crea un elemento div. Aggiungi un evento onmouseover che cambia il colore del div. Aggiungi un evento onmouseout che cambia il colore del div indietro. Aggiungi un evento click che stampa un messaggio in console.
