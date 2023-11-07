@@ -1,23 +1,32 @@
 //Esercizio 1: Crea una arrow function che accetta due numeri come parametri e restituisce la loro sottrazione.
 
 /*
-const subtract = (value1, value2) => value1 - value2;
-
+const subtract = (a, b) => a - b;
 console.log(subtract(10, 3));
 */
 
 //Esercizio 2: Crea un oggetto chiamato 'studente'. Dovrebbe avere proprietà per 'nome' e 'età'. Dovrebbe anche avere un metodo che usa la parola chiave 'this' per stampare il nome e l'età dello studente e un metodo per incrementare l'età.
+// Dopo aver fatto l'esercizio abbiamo aggiunto un contatore di saluti.
 
-// NON FINITO -----------------------------
 /*
-let studente = {
+const studente = {
   nome: "Piero",
   eta: 10,
-  invecchia: function (n) {
-    this.eta += n;
+  cresci: function (anni) {
+    this.eta += anni;
   },
+  dicciChiSei: function () {
+    console.log(`Ciao sono ${this.nome} ed ho ${this.eta} anni`);
+    this.contatoreSaluti += 1;
+  },
+  contatoreSaluti: 0,
 };
 
+studente.cresci(6);
+studente.dicciChiSei();
+studente.dicciChiSei();
+studente.dicciChiSei();
+studente.dicciChiSei();
 console.log(studente);
 */
 
@@ -25,14 +34,15 @@ console.log(studente);
 
 /*
 window.addEventListener("load", () => {
-  document.body.innerHTML += "Gianni";
-  document.getElementById("div1").innerText = "Carrot";
+  const div = document.getElementById("div1");
+  div.innerText = "Carrot";
+  div.innerHTML += "<p>Gianni</p>";
 });
 */
 
 //Esercizio 4: Crea una lista non ordinata con tre elementi di lista. Usa JavaScript per aggiungere un nuovo elemento di lista alla fine della lista usando appendChild. Poi usa insertBefore per aggiungere un elemento di lista all'inizio della lista.
 
-// NON SONO RIUSCITO A FARE LA SECONDA PARTE ----------------
+// NON SONO RIUSCITO A FARE LA SECONDA PARTE ----------SOLUZIONE: screenshot di lezione negli appunti
 
 /*
 window.addEventListener("load", function () {
@@ -68,9 +78,15 @@ window.addEventListener("load", () => {
 
 //Esercizio 6: Crea un pulsante in HTML. Usa JavaScript per impostare un attributo 'disabled' sul pulsante usando setAttribute().
 
+/*
 window.addEventListener("load", () => {
   const button = document.querySelector("button");
   button.setAttribute("disabled", "");
   console.log(button);
 });
+*/
+
 //Esercizio 7: Crea un elemento div. Aggiungi un evento onmouseover che cambia il colore del div. Aggiungi un evento onmouseout che cambia il colore del div indietro. Aggiungi un evento click che stampa un messaggio in console.
+
+//Esercizio fatto con Hyur per evitare di usare prompt
+// Chiedi all'utente un numero e stampa nell'HTML il suo quadrato (senza usare 'prompt')
