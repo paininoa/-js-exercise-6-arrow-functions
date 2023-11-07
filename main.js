@@ -54,25 +54,23 @@ window.addEventListener("load", function () {
 });
 */
 
-//Esercizio 5: Crea un elemento div con class 'blu'. Usa JavaScript per controllare al click se il div ha la classe 'blu' usando classList.includes(). Poi usa classList.add() per aggiungere una classe 'rosso' e classList.remove() per rimuovere la classe 'blu'.
-
-//NON HO CAPITO, NON VIENE ------------------
+//Esercizio 5: Crea un elemento div con class 'blu'. Usa JavaScript per controllare al click se il div ha la classe 'blu' usando classList.contains(). Poi usa classList.add() per aggiungere una classe 'rosso' e classList.remove() per rimuovere la classe 'blu'.
 
 /*
 window.addEventListener("load", () => {
-  const divBlu = document.getElementsByClassName("blu");
+  const divBlu = document.querySelector(".blu");
 
   divBlu.addEventListener("click", function () {
-    const cl = this.classList;
-    if (cl.includes("blu")) {
+    const cl = divBlu.classList;
+    console.log(divBlu);
+    if (cl.contains("blu")) {
       cl.add("rosso");
       cl.remove("blu");
     } else {
       cl.add("blu");
+      cl.remove("rosso");
     }
   });
-
-  console.log(this);
 });
 */
 
@@ -87,6 +85,3 @@ window.addEventListener("load", () => {
 */
 
 //Esercizio 7: Crea un elemento div. Aggiungi un evento onmouseover che cambia il colore del div. Aggiungi un evento onmouseout che cambia il colore del div indietro. Aggiungi un evento click che stampa un messaggio in console.
-
-//Esercizio fatto con Hyur per evitare di usare prompt
-// Chiedi all'utente un numero e stampa nell'HTML il suo quadrato (senza usare 'prompt')
